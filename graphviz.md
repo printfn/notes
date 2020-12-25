@@ -46,11 +46,15 @@ underscores (and not begin with a number), or they must be escaped using `""` or
 digraph test { </> -> <src/> -> "main.rs" }
 ```
 
+![rendered graph](./graphviz/2.png)
+
 Using `graph` instead of `digraph`, and `--` instead of `->` creates an undirected graph:
 
 ```dot
 graph test { a -- b -- c }
 ```
+
+![rendered graph](./graphviz/3.png)
 
 Edge colors can be changed like this:
 
@@ -58,11 +62,15 @@ Edge colors can be changed like this:
 digraph test { a -> b [color=blue] }
 ```
 
+![rendered graph](./graphviz/4.png)
+
 To change node colors, explicitly declare the node:
 
 ```dot
 digraph test { a[color=red] a -> b [color=blue] }
 ```
+
+![rendered graph](./graphviz/5.png)
 
 To create a horizontal graph, add `rankdir=LR` (case-sensitive):
 
@@ -70,8 +78,12 @@ To create a horizontal graph, add `rankdir=LR` (case-sensitive):
 digraph test { rankdir=LR a->b->c a->c }
 ```
 
+![rendered graph](./graphviz/6.png)
+
 You can specify directions using `:n` `:ne` `:e` `:se` `:s` `:sw` `:w` `:nw`:
 
 ```dot
 digraph test { a:e->b:w [taillabel="t"] b->a }
 ```
+
+![rendered graph](./graphviz/7.png)
