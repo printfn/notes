@@ -1,4 +1,4 @@
-# GraphViz (.dot files)
+# Graphviz (.dot files)
 
 Language reference: https://graphviz.org/doc/info/lang.html
 
