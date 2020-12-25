@@ -18,6 +18,8 @@ You can easily render this by installing `graphviz` and running:
 echo 'digraph test { a -> {b,c}; b -> c; b -> b; c -> b }'|dot -Tpng >out.png
 ```
 
+Increasing the resolution (for retina displays etc.) is possible with `dot -Gdpi=400`.
+
 Aliases for `kitty`:
 ```zsh
 # in ~/.zshrc
