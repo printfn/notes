@@ -10,6 +10,8 @@ Simple example:
 digraph test { a -> {b,c}; b -> c; b -> b; c -> b }
 ```
 
+![rendered graph](./graphviz/1.png)
+
 You can easily render this by installing `graphviz` and running:
 
 ```bash
