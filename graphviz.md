@@ -28,7 +28,7 @@ alias icat="kitty icat --align=left"
 alias idot="dot -Tpng /dev/stdin -o /dev/stdout|icat"
 
 # then execute
-echo 'digraph test { a -> {b,c}; b -> c; b -> b; c -> b }'|icat
+echo 'digraph test { a -> {b,c}; b -> c; b -> b; c -> b }'|idot
 ```
 
 You can explicitly declare nodes like this:
