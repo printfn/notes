@@ -89,3 +89,11 @@ digraph test { a:e->b:w [taillabel="t"] b->a }
 ```
 
 ![rendered graph](./graphviz/7.png)
+
+Different [shapes](https://graphviz.org/doc/info/shapes.html) can be set using the `shape` attribute:
+
+```dot
+digraph test { a[shape=box] b[color="#ff6900" shape=diamond] {a,b} -> {b,c} rankdir=LR }
+```
+
+![rendered graph](./graphviz/8.png)
